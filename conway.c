@@ -14,6 +14,9 @@ Postconditions: Output is an animation of max_iter number of simulations of Conw
 #define COL 20
 
 void
+printIntro();
+
+void
 chooseArray (int array[ROW][COL], char choice);
 
 int 
@@ -21,16 +24,6 @@ valid (int array[ROW][COL], int r, int c);
 
 int 
 checkn (int array[ROW][COL], int r, int c);
-
-void
-printIntro()
-{
-  printf ("Hello! Welcome to a simulation of Conway's Game of Life. This program will take a 20x20 grid of your choice and apply the rules of Conway's Game of Life to arrive at a final outcome.\n\n");
-  printf ("For a randomly initialized pattern, enter 'R'\n");
-  printf ("For a still life pattern, enter 'S'\n");
-  printf ("For an oscillatory pattern, enter 'O'\n");
-  printf ("For a spaceship pattern, enter 'P'\n");
-}
 
 int 
 main ()
@@ -98,6 +91,17 @@ main ()
 
 
 //-----------------------------------------------------------------------
+
+// function to print introduction
+void
+printIntro()
+{
+  printf ("Hello! Welcome to a simulation of Conway's Game of Life. This program will take a 20x20 grid of your choice and apply the rules of Conway's Game of Life to arrive at a final outcome.\n\n");
+  printf ("For a randomly initialized pattern, enter 'R'\n");
+  printf ("For a still life pattern, enter 'S'\n");
+  printf ("For an oscillatory pattern, enter 'O'\n");
+  printf ("For a spaceship pattern, enter 'P'\n");
+}
 
 // function to choose an array initialization based on user input
 void
