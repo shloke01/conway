@@ -2,7 +2,6 @@
 To implement Conway's Game of Life.
 
 Preconditions: User must input a valid choice among characters 'R', 'S', 'O', 'P', as well as a valid integer for max_iter (the number if iterations)
-
 Postconditions: Output is an animation of max_iter number of simulations of Conway's Game of Life for the selected array initialization
 */
 
